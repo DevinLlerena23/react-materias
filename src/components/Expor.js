@@ -1,7 +1,8 @@
 import React,{useState} from 'react'
 import {datos} from "./Materias";
 
- function Materi() {
+function Materi(props) {
+    const { Materi } = props; 
     const [listadomaterias,setListadomaterias]=useState(datos);
 
     console.log("Lista de Materias")
