@@ -1,33 +1,22 @@
-import React,{useState} from 'react'
-import {datos} from "./Materias";
+import React from 'react'
+
 
 function Materi(props) {
-    const { Materi } = props; 
-    const [listadomaterias,setListadomaterias]=useState(datos);
 
     console.log("Lista de Materias")
   
 
-    const eliminar=(item)=>{
-       
-        if(window.confirm("Confirme que desea eliminar esta materia?"))
-       {
-        const nuevaLista= listadomaterias.filter(tarea=>{
-            return  tarea.Asignatura!==item.Asignatura;
-        })
-
-
-        setListadomaterias(nuevaLista);
-       }
-
-    }
+    const eliminar = (item) => {
+      // console.log("dato a eliminar", item);
+      props.eliminarClick(item);
+    };
 
     return (
         <div>
             <div className='container'>
                 <div className='row mt-4'>
                     {
-                        listadomaterias.map((item, index) => {
+                        props.datos.map((item, index) => {
                             return (
                                 <div className="col-md-4 col-sm-6 d-flex justify-content-center" key={index}>
                                   <div className="card mt-4">
