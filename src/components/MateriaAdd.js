@@ -10,11 +10,11 @@ export default function MateriaAdd({guardarTarea}) {
     const guardar = (event) => {
       event.preventDefault();
       const tareaNueva = {
-        "asignatura": asignatura,
-        "nrc": nrc,
-        "creditos": creditos,
-          "parcial_1": parcial_1,
-        "parcial_2":parcial_2,
+        "Asignatura": asignatura,
+        "Nrc": nrc,
+        "Creditos": creditos,
+        "Parcial_1": parcial_1,
+        "Parcial_2":parcial_2,
       };
       //console.log("nueva tarea: ",tareaNueva )
       guardarTarea(tareaNueva);
@@ -45,10 +45,10 @@ export default function MateriaAdd({guardarTarea}) {
             </div>
             <div className="card-body "></div>
             <div class="form-group">
-              <label for="asignatura">Titulo de la asignatura</label>
+              <label htmlfor="asignatura">Titulo de la asignatura</label>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="asignatura"
                 name="asignatura"
                 placeholder="Ingrese la asignatura"
@@ -58,10 +58,10 @@ export default function MateriaAdd({guardarTarea}) {
               />
             </div>
             <div class="form-group">
-              <label for="nrc">nrc de la materia</label>
+              <label htmlfor="nrc">nrc de la materia</label>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="nrc"
                 name="nrc"
                 placeholder="Ingrese el nrc de la maeria"
@@ -71,10 +71,10 @@ export default function MateriaAdd({guardarTarea}) {
               />
             </div>
             <div class="form-group">
-              <label for="creditos">creditos de la  materia</label>
+              <label htmlfor="creditos">creditos de la  materia</label>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="creditos"
                 name="creditos"
                 placeholder="Ingrese los creditos de la materia"
@@ -84,10 +84,10 @@ export default function MateriaAdd({guardarTarea}) {
               />
             </div>
             <div class="form-group">
-              <label for="parcial_1">Nota dela parcial 1</label>
+              <label htmlfor="parcial_1">Nota dela parcial 1</label>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="parcial_1"
                 name="parcial_1"
                 placeholder="Ingrese la nota del parcial 1"
@@ -97,10 +97,10 @@ export default function MateriaAdd({guardarTarea}) {
               />
             </div>
             <div class="form-group">
-              <label for="parcial_2">nota del parcial 2</label>
+              <label htmlfor="parcial_2">nota del parcial 2</label>
               <input
                 type="text"
-                class="form-control"
+                className="form-control"
                 id="parcial_2"
                 name="parcial_2"
                 placeholder="Ingrese la nota del 2 parcial"

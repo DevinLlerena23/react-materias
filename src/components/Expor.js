@@ -8,7 +8,7 @@ function Materi(props) {
 
     const eliminar = (item) => {
       // console.log("dato a eliminar", item);
-      props.eliminarClick(item);
+      props.eliminar(item);
     };
 
     return (
